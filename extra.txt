@@ -1,0 +1,2 @@
+# 安装CUDA工具包 + 580版本计算库（兼容550驱动，且是列表中较新稳定版）
+apt-get install -y nvidia-cuda-toolkit libnvidia-compute-580
