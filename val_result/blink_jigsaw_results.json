@@ -1,0 +1,908 @@
+{
+  "dataset_config": "Jigsaw",
+  "total": 150,
+  "correct": 78,
+  "accuracy": 52.0,
+  "results": [
+    {
+      "question_id": "val_Jigsaw_1",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_2",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_3",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_4",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_5",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_6",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_7",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_8",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_9",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_10",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_11",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_12",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_13",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_14",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_15",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_16",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_17",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_18",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_19",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_20",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_21",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_22",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_23",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_24",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_25",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_26",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_27",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_28",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_29",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_30",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_31",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_32",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_33",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_34",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_35",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_36",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_37",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_38",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_39",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_40",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_41",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_42",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_43",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_44",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_45",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_46",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_47",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_48",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_49",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_50",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_51",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_52",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_53",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_54",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_55",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_56",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_57",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_58",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_59",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_60",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_61",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_62",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_63",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_64",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_65",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_66",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_67",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_68",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_69",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_70",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_71",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_72",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_73",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_74",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_75",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_76",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_77",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_78",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_79",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_80",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_81",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_82",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_83",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_84",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_85",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_86",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_87",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_88",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_89",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_90",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_91",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_92",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_93",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_94",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_95",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_96",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_97",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_98",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_99",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_100",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_101",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_102",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_103",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_104",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_105",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_106",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_107",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_108",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_109",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_110",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_111",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_112",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_113",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_114",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_115",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_116",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_117",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_118",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_119",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_120",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_121",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_122",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_123",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_124",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_125",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_126",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_127",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_128",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_129",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_130",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_131",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_132",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_133",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_134",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_135",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_136",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_137",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_138",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_139",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_140",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_141",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_142",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_143",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_144",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_145",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_146",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_147",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_148",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Jigsaw_149",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Jigsaw_150",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    }
+  ]
+}

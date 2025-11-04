@@ -1,0 +1,4 @@
+transformers==4.54.0
+accelerate
+qwen-vl-utils
+datasets

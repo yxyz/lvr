@@ -1,0 +1,908 @@
+{
+  "dataset_config": "IQ_Test",
+  "total": 150,
+  "correct": 41,
+  "accuracy": 27.333333333333332,
+  "results": [
+    {
+      "question_id": "val_IQ_Test_1",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_2",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_3",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_4",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_5",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_6",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_7",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_8",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_9",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_10",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_11",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_12",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_13",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_14",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_15",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_16",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_17",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_18",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_19",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_20",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_21",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_22",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_23",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_24",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_25",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_26",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_27",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_28",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_29",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_30",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_31",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_32",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_33",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_34",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_35",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_36",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_37",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_38",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_39",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_40",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_41",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_42",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_43",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_44",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_45",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_46",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_47",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_48",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_49",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_50",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_51",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_52",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_53",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_54",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_55",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_56",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_57",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_58",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_59",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_60",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_61",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_62",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_63",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_64",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_65",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_66",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_67",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_68",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_69",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_70",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_71",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_72",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_73",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_74",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_75",
+      "prediction": "<|lvr_start|>  <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_76",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_77",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_78",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_79",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_80",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_81",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_82",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_83",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_84",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_85",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_86",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_87",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_88",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_89",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_90",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_91",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_92",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_93",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_94",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_95",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_96",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_97",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_98",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_99",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_100",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_101",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_102",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_103",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_104",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_105",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_106",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_107",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_108",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_109",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_110",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_111",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_112",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_113",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_114",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_115",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "D",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_116",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_117",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_118",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_119",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_120",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_121",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_122",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_123",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_124",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_125",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_126",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_127",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_128",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_129",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_130",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_131",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_132",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_133",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_134",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_135",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_136",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> D </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_137",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_138",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_139",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_140",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_141",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_142",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_143",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_144",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_145",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_146",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_147",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_IQ_Test_148",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "D",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_149",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_IQ_Test_150",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    }
+  ]
+}

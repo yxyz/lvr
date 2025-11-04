@@ -134,6 +134,7 @@ def run_inference(
         return_tensors="pt",
     )
     inputs = inputs.to("cuda" if torch.cuda.is_available() else "cpu")
+    print("cuda" if torch.cuda.is_available() else "cpu")
     
     # 准备LVR参数
     lvr_steps_list = [lvr_steps] if decoding_strategy == "steps" else None
@@ -164,7 +165,7 @@ def main():
     # ========== 配置参数 - 请在此处修改 ==========
     checkpoint_path = "LVR-7B"  # 模型checkpoint路径
     image_path = "test.png"  # 图片路径（可以是单个图片路径字符串，或图片路径列表）
-    question = "how many people are in the image?"  # 问题文本
+    question = "how many mountains are in the image?"  # 问题文本
     decoding_strategy = "steps"  # 解码策略: "steps" 或 "latent"
     lvr_steps = 8  # LVR推理步数（当decoding_strategy="steps"时使用）
     max_new_tokens = 512  # 最大生成token数

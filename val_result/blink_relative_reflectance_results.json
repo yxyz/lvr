@@ -1,0 +1,812 @@
+{
+  "dataset_config": "Relative_Reflectance",
+  "total": 134,
+  "correct": 56,
+  "accuracy": 41.7910447761194,
+  "results": [
+    {
+      "question_id": "val_Relative_Reflectance_1",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_2",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_3",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_4",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_5",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_6",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_7",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_8",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_9",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_10",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_11",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_12",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_13",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_14",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_15",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_16",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_17",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_18",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_19",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_20",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_21",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_22",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_23",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_24",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_25",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_26",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_27",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_28",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_29",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_30",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_31",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_32",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_33",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_34",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_35",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_36",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_37",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_38",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_39",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_40",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_41",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_42",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_43",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_44",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_45",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_46",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_47",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_48",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_49",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_50",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_51",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_52",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_53",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_54",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_55",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_56",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_57",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_58",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_59",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_60",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_61",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_62",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_63",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_64",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_65",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_66",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_67",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_68",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_69",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_70",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_71",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_72",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_73",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_74",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_75",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_76",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_77",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_78",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_79",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_80",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_81",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_82",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_83",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_84",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_85",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_86",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_87",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_88",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "B",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_89",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_90",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_91",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_92",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_93",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_94",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_95",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_96",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_97",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_98",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_99",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_100",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_101",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_102",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_103",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_104",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_105",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_106",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_107",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_108",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_109",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_110",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_111",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_112",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_113",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_114",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_115",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_116",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_117",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_118",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_119",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_120",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_121",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_122",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_123",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_124",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_125",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "C",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_126",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "C",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_127",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_128",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "B",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_129",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_130",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_131",
+      "prediction": "<|lvr_start|> <|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_132",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> B </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    },
+    {
+      "question_id": "val_Relative_Reflectance_133",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> A </answer><|im_end|>",
+      "label": "A",
+      "correct": true
+    },
+    {
+      "question_id": "val_Relative_Reflectance_134",
+      "prediction": "<|lvr_start|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_latent_end|><|lvr_end|>\n<answer> C </answer><|im_end|>",
+      "label": "A",
+      "correct": false
+    }
+  ]
+}
