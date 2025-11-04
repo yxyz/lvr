@@ -1,5 +1,14 @@
 """
     Implementation of LVR models based on Qwen-2.5-VL series
+    
+    【文件说明】
+    本文件实现了基于 Qwen2.5-VL 的 LVR (Latent Visual Reasoning) 模型。
+    相比原始的 Qwen2_5_VLForConditionalGeneration，主要修改包括：
+    1. 新增 QwenWithLVR 类，继承自 Qwen2_5_VLForConditionalGeneration
+    2. 添加 LVR head 初始化功能，用于将隐藏状态转换为潜在表示
+    3. 添加可学习的 latent end token 嵌入，用于自动判断何时退出 LVR 模式
+    4. 重写 generate 方法，支持三种 LVR 解码策略
+    5. 新增三种 LVR 解码方法：基础版本、使用 latent end token 的版本、按步数控制的版本
 """
 import math
 import torch.nn as nn
@@ -55,19 +64,25 @@ from transformers.integrations.fsdp import is_fsdp_managed_module
 
 from src.model.lvr_heads import LVRHead, LVRHeadGLU
 
+# 【LVR 修改】继承 Qwen2_5_VLForConditionalGeneration，添加 LVR（Latent Variable Reasoning）功能
 class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
     def __init__(self, config):
         super().__init__(config)
+        # 【LVR 修改】如果配置了 LVR head，初始化 LVR 头（用于将隐藏状态转换为潜在表示）
         if config.lvr_head:
             self._init_lvr_head(config.lvr_head_type)
+        # 【LVR 修改】如果配置了可学习的 latent end token，初始化潜在结束标记的嵌入
         if config.latent_end_token:
             self._init_lvr_latent_end_emb()
         
+    # 【LVR 修改】初始化 LVR 头：将隐藏状态转换为潜在空间的神经网络层
     def _init_lvr_head(self,lvr_head_type):
         print(f"Detected LVR Head Type: '{lvr_head_type}'")
         if lvr_head_type == 'simple':
+            # 简单版本的 LVR 头
             self.lvr_head = LVRHead(hidden_size=self.config.hidden_size)
         elif lvr_head_type == 'glu':
+            # GLU（Gated Linear Unit）版本的 LVR 头，更复杂但表达能力更强
             self.lvr_head = LVRHeadGLU(hidden_size=self.config.hidden_size, 
                                        intermediate_size=self.config.intermediate_size,
                                        hidden_act=self.config.hidden_act)
@@ -78,12 +93,15 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
         self.config.lvr_head_type = lvr_head_type
 
         
+    # 【LVR 修改】初始化可学习的潜在结束标记嵌入
+    # 这个嵌入用于在推理时判断是否应该退出 LVR 模式（而不是使用固定的 <|lvr_end|> token）
     def _init_lvr_latent_end_emb(self):
 
         print(f"Activated Learnable latent end token of LVR")
         # Initializing the learnable latentend
         # 2X norm to distinguish this from the normal semantic space
         target_norm_scale_latentend = 1
+        # 【LVR 修改】随机初始化一个可学习的嵌入向量，用于表示 LVR 模式的结束状态
         with torch.no_grad():
             v = torch.randn(self.config.hidden_size, dtype=self.dtype, device=self.device)
             v = v / (v.norm() + 1e-6)
@@ -96,7 +114,12 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
         # )
         # self.register_buffer('lvr_latent_end_emb', lvr_latent_end_emb)    # will not compute grad
     
-    # Patch the generation function with lvr_generate
+    # 【LVR 修改】重写 generate 方法，添加 LVR 解码支持
+    # 相比原始的 Qwen VL 模型，这里添加了三个新的解码策略参数：
+    # - decoding_strategy: 解码策略（"latent", "steps", 或默认）
+    # - criterion: 用于判断 latent end 的损失函数类型（"mse", "mae", "cosine"）
+    # - lvr_end_threshold: 判断是否到达 latent end 的阈值
+    # - lvr_steps: LVR 模式的步数限制
     def generate(
         self,
         inputs: Optional[torch.Tensor] = None,
@@ -110,10 +133,10 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
         negative_prompt_ids: Optional[torch.Tensor] = None,
         negative_prompt_attention_mask: Optional[torch.Tensor] = None,
         use_model_defaults: Optional[bool] = None,
-        decoding_strategy:Optional[str]=None,
-        criterion: Optional[str]="mse",
-        lvr_end_threshold: Optional[float]=0.02,
-        lvr_steps: Optional[List[int]]=None,
+        decoding_strategy:Optional[str]=None,  # 【LVR 新增参数】解码策略
+        criterion: Optional[str]="mse",  # 【LVR 新增参数】损失函数类型
+        lvr_end_threshold: Optional[float]=0.02,  # 【LVR 新增参数】结束阈值
+        lvr_steps: Optional[List[int]]=None,  # 【LVR 新增参数】步数限制
         **kwargs,
         ) -> Union[GenerateOutput, torch.LongTensor]:
         """
@@ -302,11 +325,11 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
             **model_kwargs,
         )
 
-        # 12. run sample (it degenerates to greedy search when `generation_config.do_sample=False`)
-        '''
-            ._sample is patched by _lvr_decoding
-        '''
+        # 【LVR 修改】12. 根据解码策略选择不同的 LVR 解码方法（替换了原始的 _sample 方法）
+        # 相比原始模型，这里提供了三种 LVR 解码策略：
         if decoding_strategy == "latent":
+            # 【LVR 修改】使用可学习的 latent end token 进行解码
+            # 当隐藏状态接近 latent end embedding 时自动退出 LVR 模式
             result = self._lvr_deocding_with_latentend(
                 input_ids,
                 logits_processor=prepared_logits_processor,
@@ -320,6 +343,8 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
                 **model_kwargs,)
             
         elif decoding_strategy == "steps":
+            # 【LVR 修改】按固定步数进行 LVR 解码
+            # 在达到指定步数后自动退出 LVR 模式
             result = self._lvr_deocding_by_steps(
                 input_ids,
                 logits_processor=prepared_logits_processor,
@@ -330,9 +355,8 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
                 lvr_steps = lvr_steps,
                 **model_kwargs,)
         else:
-            # Vanilla decoding
-            # enters LVR if it sees start
-            # exits LVR if it sees end
+            # 【LVR 修改】默认解码策略：使用 <|lvr_start|> 和 <|lvr_end|> token 控制
+            # 当遇到 <|lvr_start|> 时进入 LVR 模式，遇到 <|lvr_end|> 时退出
             result = self._lvr_deocding(
                 input_ids,
                 logits_processor=prepared_logits_processor,
@@ -355,7 +379,15 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
             result.past_key_values = result.past_key_values.to_legacy_cache()
         return result
     
-    # LVR docoding logic
+    # 【LVR 修改】LVR 解码逻辑：使用 <|lvr_start|> 和 <|lvr_end|> token 控制推理模式
+    # 这是最基础的 LVR 解码方法，相比原始模型的 _sample 方法，这里添加了：
+    # 1. LVR 模式开关管理（lvr_mode_switch）
+    # 2. 隐藏状态传递（last_position_hidden_state）
+    # 3. 在 LVR 模式下使用隐藏状态而非 token ID 进行推理
+    # 
+    # 【与原始模型对比】
+    # 原始 Qwen2.5-VL 的 generate 方法中只有标准的 _sample/_greedy_search/_beam_search 等方法，
+    # 本方法是对原始 _sample 方法的完全重写，添加了 LVR 模式切换逻辑
     def _lvr_deocding(
             self,
             input_ids: torch.LongTensor,
@@ -449,7 +481,9 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
             else:
                 is_prefill = True
 
+            # 【LVR 修改】初始化 LVR 模式开关：标记哪些样本当前处于 LVR 推理模式
             lvr_mode_switch = torch.zeros(batch_size,dtype=torch.bool,device=input_ids.device)  # switch gate for lvr mode
+            # 【LVR 修改】保存上一位置的隐藏状态，用于在 LVR 模式下替代 token embedding
             last_position_hidden_state = None
             while self._has_unfinished_sequences(this_peer_finished, synced_gpus, device=input_ids.device):
                 # prepare model inputs
@@ -459,6 +493,8 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
                 model_inputs.update({"output_attentions": output_attentions} if output_attentions else {})
                 model_inputs.update({"output_hidden_states": output_hidden_states} if output_hidden_states else {})
                 
+                # 【LVR 修改】将 LVR 模式开关和上一位置的隐藏状态传递给 forward 方法
+                # 这些参数会在 monkey_patch 的 forward 中使用，用于决定是否使用隐藏状态替代 token embedding
                 model_inputs.update({"lvr_mode_switch":lvr_mode_switch})
                 model_inputs.update({"last_position_hidden_state":last_position_hidden_state})
                 if is_prefill:
@@ -516,23 +552,29 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
                     next_tokens = next_tokens * unfinished_sequences + pad_token_id * (1 - unfinished_sequences)
 
                 '''
-                    LVR reasoning mode switches:
+                    【LVR 修改】LVR 推理模式切换逻辑：
 
-                    When next token is <|lvr_start|>, we still need to pass its token id through decoding
-                    When last token is <|lvr_start|>, we will start passing hidden states (enter lvr mode)
+                    当遇到 <|lvr_start|> token 时：
+                    - 仍然需要先通过正常的 token 解码处理这个 token
+                    - 处理完后，下一个位置开始使用隐藏状态进行推理（进入 LVR 模式）
 
-                    When next token is <|lvr_end|>, we will stop passing hidden states (end lvr mode)
+                    当遇到 <|lvr_end|> token 时：
+                    - 停止使用隐藏状态，恢复使用 token ID 进行推理（退出 LVR 模式）
 
-                    ONE ASSUMPTION: The LVR hidden states shall not trigger <|lvr_end|>
+                    重要假设：LVR 模式生成的隐藏状态不应该触发 <|lvr_end|> token
                 '''
                 last_tokens = input_ids[:,-1]
+                # 【LVR 修改】检测是否遇到 <|lvr_start|> token（用于进入 LVR 模式）
                 lvr_start_switch = (last_tokens == self.config.lvr_start_id).to(device=input_ids.device)            
+                # 【LVR 修改】检测是否遇到 <|lvr_end|> token（用于退出 LVR 模式）
                 lvr_end_switch = (next_tokens == self.config.lvr_end_id).to(device=input_ids.device)                
                 '''
                     Goal: lvr_mode_switch = lvr_mode_switch + lvr_start_switch - lvr_end_switch
 
                 '''
+                # 【LVR 修改】更新 LVR 模式开关：遇到 start 时开启，遇到 end 时关闭
                 lvr_mode_switch = (lvr_mode_switch | lvr_start_switch) & (~lvr_end_switch)
+                # 【LVR 修改】保存当前输出的最后位置隐藏状态，用于下一轮 LVR 推理
                 last_position_hidden_state = outputs.last_position_hidden_state
 
                 # update generated ids, model inputs, and length for next step
@@ -580,6 +622,11 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
             else:
                 return input_ids
 
+    # 【LVR 修改】使用可学习的 latent end token 进行解码
+    # 相比基础的 _lvr_deocding，这个方法：
+    # 1. 不使用固定的 <|lvr_end|> token，而是通过比较隐藏状态与可学习的 latent end embedding
+    # 2. 当隐藏状态接近 latent end embedding 时（距离小于阈值），自动退出 LVR 模式
+    # 3. 支持多种距离度量方式（MSE、MAE、余弦相似度）
     def _lvr_deocding_with_latentend(
             self,
             input_ids: torch.LongTensor,
@@ -588,9 +635,9 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
             generation_config: GenerationConfig,
             synced_gpus: bool,
             streamer: Optional["BaseStreamer"],
-            criterion: Optional[str]="mse",
-            lvr_end_threshold: Optional[float]=0.1,
-            lvr_max_steps: Optional[int]=16,
+            criterion: Optional[str]="mse",  # 【LVR 新增】距离度量方式
+            lvr_end_threshold: Optional[float]=0.1,  # 【LVR 新增】结束阈值
+            lvr_max_steps: Optional[int]=16,  # 【LVR 新增】最大步数限制
             **model_kwargs,
         ) -> Union[GenerateNonBeamOutput, torch.LongTensor]:
             r"""
@@ -625,203 +672,223 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
                 `return_dict_in_generate=True` or a [`~generation.GenerateEncoderDecoderOutput`] if
                 `model.config.is_encoder_decoder=True`.
             """
-            # init values
-            lvr_max_steps = lvr_max_steps[0] if isinstance(lvr_max_steps,list) else lvr_max_steps
-            pad_token_id = generation_config._pad_token_tensor
-            output_attentions = generation_config.output_attentions
-            output_hidden_states = generation_config.output_hidden_states
-            output_scores = generation_config.output_scores
-            output_logits = generation_config.output_logits
-            return_dict_in_generate = generation_config.return_dict_in_generate
-            has_eos_stopping_criteria = any(hasattr(criteria, "eos_token_id") for criteria in stopping_criteria)
-            do_sample = generation_config.do_sample
+        # 【LVR 修改】初始化值：处理 lvr_max_steps 参数（可能是列表或单个值）
+        lvr_max_steps = lvr_max_steps[0] if isinstance(lvr_max_steps,list) else lvr_max_steps
+        pad_token_id = generation_config._pad_token_tensor
+        output_attentions = generation_config.output_attentions
+        output_hidden_states = generation_config.output_hidden_states
+        output_scores = generation_config.output_scores
+        output_logits = generation_config.output_logits
+        return_dict_in_generate = generation_config.return_dict_in_generate
+        has_eos_stopping_criteria = any(hasattr(criteria, "eos_token_id") for criteria in stopping_criteria)
+        do_sample = generation_config.do_sample
 
-            # init attention / hidden states / scores tuples
-            scores = () if (return_dict_in_generate and output_scores) else None
-            raw_logits = () if (return_dict_in_generate and output_logits) else None
-            decoder_attentions = () if (return_dict_in_generate and output_attentions) else None
-            cross_attentions = () if (return_dict_in_generate and output_attentions) else None
-            decoder_hidden_states = () if (return_dict_in_generate and output_hidden_states) else None
+        # init attention / hidden states / scores tuples
+        scores = () if (return_dict_in_generate and output_scores) else None
+        raw_logits = () if (return_dict_in_generate and output_logits) else None
+        decoder_attentions = () if (return_dict_in_generate and output_attentions) else None
+        cross_attentions = () if (return_dict_in_generate and output_attentions) else None
+        decoder_hidden_states = () if (return_dict_in_generate and output_hidden_states) else None
 
-            # if model is an encoder-decoder, retrieve encoder attention weights and hidden states
-            if return_dict_in_generate and self.config.is_encoder_decoder:
-                encoder_attentions = model_kwargs["encoder_outputs"].get("attentions") if output_attentions else None
-                encoder_hidden_states = (
-                    model_kwargs["encoder_outputs"].get("hidden_states") if output_hidden_states else None
-                )
+        # if model is an encoder-decoder, retrieve encoder attention weights and hidden states
+        if return_dict_in_generate and self.config.is_encoder_decoder:
+            encoder_attentions = model_kwargs["encoder_outputs"].get("attentions") if output_attentions else None
+            encoder_hidden_states = (
+                model_kwargs["encoder_outputs"].get("hidden_states") if output_hidden_states else None
+            )
 
-            # keep track of which sequences are already finished
-            batch_size, cur_len = input_ids.shape
-            this_peer_finished = False
-            unfinished_sequences = torch.ones(batch_size, dtype=torch.long, device=input_ids.device)
-            
+        # keep track of which sequences are already finished
+        batch_size, cur_len = input_ids.shape
+        this_peer_finished = False
+        unfinished_sequences = torch.ones(batch_size, dtype=torch.long, device=input_ids.device)
+        
+        # 【LVR 修改】初始化缓存位置（兼容不同版本的 transformers）
+        # 先尝试使用新版本 API（传入 cur_len），如果失败则使用旧版本 API（传入 input_ids）
+        try:
             model_kwargs = self._get_initial_cache_position(cur_len, input_ids.device, model_kwargs)
-            # model_kwargs = self._get_initial_cache_position(input_ids, model_kwargs)
+        except:
+            model_kwargs = self._get_initial_cache_position(input_ids, model_kwargs)
 
-            model_forward = self.__call__
-            if isinstance(model_kwargs.get("past_key_values"), Cache):
-                is_compileable = model_kwargs["past_key_values"].is_compileable and self._supports_static_cache
-                if getattr(self, "hf_quantizer", None) is not None:
-                    is_compileable &= self.hf_quantizer.is_compileable
-                is_compileable = is_compileable and not generation_config.disable_compile
-                if is_compileable and (
-                    self.device.type == "cuda" or generation_config.compile_config._compile_all_devices
-                ):
-                    os.environ["TOKENIZERS_PARALLELISM"] = "0"
-                    model_forward = self.get_compiled_call(generation_config.compile_config)
+        model_forward = self.__call__
+        if isinstance(model_kwargs.get("past_key_values"), Cache):
+            is_compileable = model_kwargs["past_key_values"].is_compileable and self._supports_static_cache
+            if getattr(self, "hf_quantizer", None) is not None:
+                is_compileable &= self.hf_quantizer.is_compileable
+            is_compileable = is_compileable and not generation_config.disable_compile
+            if is_compileable and (
+                self.device.type == "cuda" or generation_config.compile_config._compile_all_devices
+            ):
+                os.environ["TOKENIZERS_PARALLELISM"] = "0"
+                model_forward = self.get_compiled_call(generation_config.compile_config)
 
-            if generation_config.prefill_chunk_size is not None:
-                model_kwargs = self._prefill_chunking(input_ids, generation_config, **model_kwargs)
+        if generation_config.prefill_chunk_size is not None:
+            model_kwargs = self._prefill_chunking(input_ids, generation_config, **model_kwargs)
+            is_prefill = False
+        else:
+            is_prefill = True
+
+        # print(criterion)
+        
+        # 【LVR 修改】设置用于判断是否到达 latent end 的损失函数
+        # 根据配置选择不同的距离度量方式
+        '''set the lvr latent end criterion'''
+        if criterion == 'mse':
+            # 均方误差（Mean Squared Error）
+            criterion_fct = MSELoss(reduction="none")
+        elif criterion == 'mae':
+            # 平均绝对误差（Mean Absolute Error）
+            criterion_fct = L1Loss(reduction="none")
+        elif criterion == 'cosine':
+            # 余弦相似度（1 - cosine similarity）
+            # Returns a loss function: 1 - cosine similarity
+            def cosine_loss(x, y):
+                return 1 - F.cosine_similarity(x, y, dim=-1).mean()
+            criterion_fct = cosine_loss
+        else:
+            raise ValueError(f"Unsupported criterion_fct: {criterion_fct}")
+
+        # 【LVR 修改】初始化 LVR 模式开关和隐藏状态（与基础版本相同）
+        lvr_mode_switch = torch.zeros(batch_size,dtype=torch.bool,device=input_ids.device)  # switch gate for lvr mode
+        last_position_hidden_state = None
+
+        # 【LVR 修改】新增：LVR 步数计数器，用于跟踪每个样本已经执行了多少步 LVR 推理
+        # 当达到最大步数时，强制退出 LVR 模式（防止无限循环）
+        lvr_step_counter = torch.zeros(batch_size, dtype=torch.long, device=input_ids.device) # track LVR steps
+        while self._has_unfinished_sequences(this_peer_finished, synced_gpus, device=input_ids.device):
+            # prepare model inputs
+            model_inputs = self.prepare_inputs_for_generation(input_ids, **model_kwargs)
+
+            # prepare variable output controls (note: some models won't accept all output controls)
+            model_inputs.update({"output_attentions": output_attentions} if output_attentions else {})
+            model_inputs.update({"output_hidden_states": output_hidden_states} if output_hidden_states else {})
+            
+            model_inputs.update({"lvr_mode_switch":lvr_mode_switch})
+            model_inputs.update({"last_position_hidden_state":last_position_hidden_state})
+
+            if is_prefill:
+                outputs = self(**model_inputs, return_dict=True)
                 is_prefill = False
             else:
-                is_prefill = True
+                outputs = model_forward(**model_inputs, return_dict=True)
 
-            # print(criterion)
-            
-            '''set the lvr latent end criterion'''
-            if criterion == 'mse':
-                criterion_fct = MSELoss(reduction="none")
-            elif criterion == 'mae':
-                criterion_fct = L1Loss(reduction="none")
-            elif criterion == 'cosine':
-                # Returns a loss function: 1 - cosine similarity
-                def cosine_loss(x, y):
-                    return 1 - F.cosine_similarity(x, y, dim=-1).mean()
-                criterion_fct = cosine_loss
+            # synced_gpus: don't waste resources running the code we don't need; kwargs must be updated before skipping
+            model_kwargs = self._update_model_kwargs_for_generation(
+                outputs,
+                model_kwargs,
+                is_encoder_decoder=self.config.is_encoder_decoder,
+            )
+            if synced_gpus and this_peer_finished:
+                continue
+
+            # Copy is needed to avoid keeping a hanging ref to outputs.logits which may be very large for first iteration
+            # (the clone itself is always small)
+            next_token_logits = outputs.logits[:, -1, :].to(copy=True, dtype=torch.float32, device=input_ids.device)
+
+            # pre-process distribution
+            next_token_scores = logits_processor(input_ids, next_token_logits)
+
+            # Store scores, attentions and hidden_states when required
+            if return_dict_in_generate:
+                if output_scores:
+                    scores += (next_token_scores,)
+                if output_logits:
+                    raw_logits += (next_token_logits,)
+                if output_attentions:
+                    decoder_attentions += (
+                        (outputs.decoder_attentions,) if self.config.is_encoder_decoder else (outputs.attentions,)
+                    )
+                    if self.config.is_encoder_decoder:
+                        cross_attentions += (outputs.cross_attentions,)
+
+                if output_hidden_states:
+                    decoder_hidden_states += (
+                        (outputs.decoder_hidden_states,)
+                        if self.config.is_encoder_decoder
+                        else (outputs.hidden_states,)
+                    )
+
+            # token selection
+            if do_sample:
+                probs = nn.functional.softmax(next_token_scores, dim=-1)
+                # TODO (joao): this OP throws "skipping cudagraphs due to ['incompatible ops']", find solution
+                next_tokens = torch.multinomial(probs, num_samples=1).squeeze(1)
             else:
-                raise ValueError(f"Unsupported criterion_fct: {criterion_fct}")
+                next_tokens = torch.argmax(next_token_scores, dim=-1)
 
-            lvr_mode_switch = torch.zeros(batch_size,dtype=torch.bool,device=input_ids.device)  # switch gate for lvr mode
-            last_position_hidden_state = None
+            # finished sentences should have their next token be a padding token
+            if has_eos_stopping_criteria:
+                next_tokens = next_tokens * unfinished_sequences + pad_token_id * (1 - unfinished_sequences)
 
-            lvr_step_counter = torch.zeros(batch_size, dtype=torch.long, device=input_ids.device) # track LVR steps
-            while self._has_unfinished_sequences(this_peer_finished, synced_gpus, device=input_ids.device):
-                # prepare model inputs
-                model_inputs = self.prepare_inputs_for_generation(input_ids, **model_kwargs)
+            '''
+                【LVR 修改】使用可学习 latent end token 的推理模式切换逻辑：
 
-                # prepare variable output controls (note: some models won't accept all output controls)
-                model_inputs.update({"output_attentions": output_attentions} if output_attentions else {})
-                model_inputs.update({"output_hidden_states": output_hidden_states} if output_hidden_states else {})
-                
-                model_inputs.update({"lvr_mode_switch":lvr_mode_switch})
-                model_inputs.update({"last_position_hidden_state":last_position_hidden_state})
+                进入 LVR 模式：
+                - 当遇到 <|lvr_start|> token 时，开始使用隐藏状态进行推理
 
-                if is_prefill:
-                    outputs = self(**model_inputs, return_dict=True)
-                    is_prefill = False
-                else:
-                    outputs = model_forward(**model_inputs, return_dict=True)
+                退出 LVR 模式：
+                - 不使用固定的 <|lvr_end|> token
+                - 而是比较当前隐藏状态与可学习的 latent end embedding
+                - 当距离小于阈值时，退出 LVR 模式
 
-                # synced_gpus: don't waste resources running the code we don't need; kwargs must be updated before skipping
-                model_kwargs = self._update_model_kwargs_for_generation(
-                    outputs,
-                    model_kwargs,
-                    is_encoder_decoder=self.config.is_encoder_decoder,
-                )
-                if synced_gpus and this_peer_finished:
-                    continue
+                重要假设：LVR 模式生成的隐藏状态不应该触发 <|lvr_end|> token
+            '''
 
-                # Copy is needed to avoid keeping a hanging ref to outputs.logits which may be very large for first iteration
-                # (the clone itself is always small)
-                next_token_logits = outputs.logits[:, -1, :].to(copy=True, dtype=torch.float32, device=input_ids.device)
+            last_tokens = input_ids[:,-1]
+            # 【LVR 修改】检测是否遇到 <|lvr_start|> token
+            lvr_start_switch = (last_tokens == self.config.lvr_start_id).to(device=input_ids.device)            
+            '''
+                【LVR 修改】检测是否应该退出 LVR 模式（通过比较隐藏状态与 latent end embedding）
+                注意：此时 last_position_hidden_state 还是上一轮的输出
+                我们需要比较上一轮的隐藏状态与 latent end embedding
+            '''
+            if last_position_hidden_state is None:
+                # 如果还没有隐藏状态，不退出 LVR 模式
+                lvr_end_switch = torch.zeros(batch_size, dtype=torch.bool, device=input_ids.device)
+            else:
+                # 【LVR 修改】计算上一轮隐藏状态与 latent end embedding 的距离
+                lvr_end_switch = criterion_fct(
+                                    last_position_hidden_state, 
+                                    self.lvr_latent_end_emb.unsqueeze(0).expand_as(last_position_hidden_state)
+                                    ).mean(dim=-1)
+                # 【LVR 修改】如果距离小于阈值，则认为应该退出 LVR 模式
+                lvr_end_switch = lvr_end_switch < lvr_end_threshold
 
-                # pre-process distribution
-                next_token_scores = logits_processor(input_ids, next_token_logits)
+            # 【LVR 修改】如果当前处于 LVR 模式，增加步数计数器
+            lvr_step_counter = lvr_step_counter + lvr_mode_switch.long()
+            # 【LVR 修改】当进入 LVR 模式时，重置计数器
+            lvr_step_counter = torch.where(lvr_start_switch, torch.zeros_like(lvr_step_counter), lvr_step_counter)
+            # 【LVR 修改】如果超过最大步数，强制退出 LVR 模式
+            lvr_budget_exceeded = lvr_step_counter >= lvr_max_steps
 
-                # Store scores, attentions and hidden_states when required
-                if return_dict_in_generate:
-                    if output_scores:
-                        scores += (next_token_scores,)
-                    if output_logits:
-                        raw_logits += (next_token_logits,)
-                    if output_attentions:
-                        decoder_attentions += (
-                            (outputs.decoder_attentions,) if self.config.is_encoder_decoder else (outputs.attentions,)
-                        )
-                        if self.config.is_encoder_decoder:
-                            cross_attentions += (outputs.cross_attentions,)
+            '''
+                Goal: lvr_mode_switch = lvr_mode_switch + lvr_start_switch - lvr_end_switch
+                Update: exit lvr when lvr_budget_exceeded 
 
-                    if output_hidden_states:
-                        decoder_hidden_states += (
-                            (outputs.decoder_hidden_states,)
-                            if self.config.is_encoder_decoder
-                            else (outputs.hidden_states,)
-                        )
+            '''
+            # 【LVR 修改】更新 LVR 模式开关：遇到 start 时开启，接近 latent end 或超过步数限制时关闭
+            # lvr_mode_switch = ((lvr_mode_switch | lvr_start_switch) & (~lvr_end_switch)).to(torch.bool)
+            lvr_mode_switch = ((lvr_mode_switch | lvr_start_switch) & (~lvr_end_switch) & (~lvr_budget_exceeded)).to(torch.bool)
 
-                # token selection
-                if do_sample:
-                    probs = nn.functional.softmax(next_token_scores, dim=-1)
-                    # TODO (joao): this OP throws "skipping cudagraphs due to ['incompatible ops']", find solution
-                    next_tokens = torch.multinomial(probs, num_samples=1).squeeze(1)
-                else:
-                    next_tokens = torch.argmax(next_token_scores, dim=-1)
+            # 【LVR 修改】更新最后位置的隐藏状态，用于下一轮的距离计算和推理
+            last_position_hidden_state = outputs.last_position_hidden_state     #We can now update the last position hidden states    
 
-                # finished sentences should have their next token be a padding token
-                if has_eos_stopping_criteria:
-                    next_tokens = next_tokens * unfinished_sequences + pad_token_id * (1 - unfinished_sequences)
+            # update generated ids, model inputs, and length for next step
+            input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
+            if streamer is not None:
+                streamer.put(next_tokens.cpu())
 
-                '''
-                    LVR reasoning mode switches:
+            # unfinished_sequences = unfinished_sequences & ~stopping_criteria(input_ids, scores)
+            """if lvr mode is unfinished, do not stop"""
+            unfinished_sequences = (
+                lvr_mode_switch | (unfinished_sequences & ~stopping_criteria(input_ids, scores))
+            )
+            # print(lvr_mode_switch)
+            this_peer_finished = unfinished_sequences.max() == 0
+            cur_len += 1
 
-                    When next token is <|lvr_start|>, we still need to pass its token id through decoding
-                    When last token is <|lvr_start|>, we will start passing hidden states (enter lvr mode)
-
-                    When current output's last_hidden_state ~ lvr_latent_end, we still pass hidden states 
-                    When last position's last_hidden_state ~ lvr_latent_end, we will start passing tokens(end lvr mode)
-
-                    ONE ASSUMPTION: The LVR hidden states shall not trigger <|lvr_end|>
-                '''
-
-                last_tokens = input_ids[:,-1]
-                lvr_start_switch = (last_tokens == self.config.lvr_start_id).to(device=input_ids.device)            
-                '''
-                    At this moment, the last_position_hidden_states has not been updated,
-                    it is still the output of the position before.
-                    We check 
-                '''
-                if last_position_hidden_state is None:
-                    lvr_end_switch = torch.zeros(batch_size, dtype=torch.bool, device=input_ids.device)
-                else:
-                    lvr_end_switch = criterion_fct(
-                                        last_position_hidden_state, 
-                                        self.lvr_latent_end_emb.unsqueeze(0).expand_as(last_position_hidden_state)
-                                        ).mean(dim=-1)
-                    lvr_end_switch = lvr_end_switch < lvr_end_threshold
-
-                # If currently in LVR mode, increment counter
-                lvr_step_counter = lvr_step_counter + lvr_mode_switch.long()
-                # Reset counter when entering LVR mode
-                lvr_step_counter = torch.where(lvr_start_switch, torch.zeros_like(lvr_step_counter), lvr_step_counter)
-                # Force exit if budget exceeded
-                lvr_budget_exceeded = lvr_step_counter >= lvr_max_steps
-
-                '''
-                    Goal: lvr_mode_switch = lvr_mode_switch + lvr_start_switch - lvr_end_switch
-                    Update: exit lvr when lvr_budget_exceeded 
-
-                '''
-                # lvr_mode_switch = ((lvr_mode_switch | lvr_start_switch) & (~lvr_end_switch)).to(torch.bool)
-                lvr_mode_switch = ((lvr_mode_switch | lvr_start_switch) & (~lvr_end_switch) & (~lvr_budget_exceeded)).to(torch.bool)
-
-                last_position_hidden_state = outputs.last_position_hidden_state     #We can now update the last position hidden states    
-
-                # update generated ids, model inputs, and length for next step
-                input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
-                if streamer is not None:
-                    streamer.put(next_tokens.cpu())
-
-                # unfinished_sequences = unfinished_sequences & ~stopping_criteria(input_ids, scores)
-                """if lvr mode is unfinished, do not stop"""
-                unfinished_sequences = (
-                    lvr_mode_switch | (unfinished_sequences & ~stopping_criteria(input_ids, scores))
-                )
-                # print(lvr_mode_switch)
-                this_peer_finished = unfinished_sequences.max() == 0
-                cur_len += 1
-
-                # This is needed to properly delete outputs.logits which may be very large for first iteration
-                # Otherwise a reference to outputs is kept which keeps the logits alive in the next iteration
-                del outputs
+            # This is needed to properly delete outputs.logits which may be very large for first iteration
+            # Otherwise a reference to outputs is kept which keeps the logits alive in the next iteration
+            del outputs
 
             if streamer is not None:
                 streamer.end()
@@ -851,7 +918,14 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
             else:
                 return input_ids
 
-# LVR docoding logic
+    # 【LVR 修改】按固定步数进行 LVR 解码
+    # 这是第三种 LVR 解码策略，相比基础版本：
+    # 1. 不使用 <|lvr_end|> token 来退出 LVR 模式
+    # 2. 而是使用固定的步数配额（lvr_steps）来控制 LVR 推理的持续时间
+    # 3. 当步数配额用尽时，自动退出 LVR 模式
+    # 
+    # 【与原始模型对比】
+    # 原始模型没有此方法，这是完全新增的 LVR 解码方法
     def _lvr_deocding_by_steps(
         self,
         input_ids: torch.LongTensor,
@@ -895,8 +969,8 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
             `return_dict_in_generate=True` or a [`~generation.GenerateEncoderDecoderOutput`] if
             `model.config.is_encoder_decoder=True`.
         """
-        # init values
-        pad_token_id = generation_config._pad_token_tensor
+        # 【LVR 修改】初始化值：处理不同版本的 transformers API 兼容性
+        # 尝试使用新版本 API，如果失败则使用旧版本 API
         output_attentions = generation_config.output_attentions
         output_hidden_states = generation_config.output_hidden_states
         output_scores = generation_config.output_scores
@@ -923,6 +997,9 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
         batch_size, cur_len = input_ids.shape
         this_peer_finished = False
         unfinished_sequences = torch.ones(batch_size, dtype=torch.long, device=input_ids.device)
+        
+        # 【LVR 修改】初始化缓存位置（兼容不同版本的 transformers）
+        # 先尝试使用新版本 API（传入 cur_len），如果失败则使用旧版本 API（传入 input_ids）
         try:
             model_kwargs = self._get_initial_cache_position(cur_len, input_ids.device, model_kwargs)
         except:
@@ -1017,38 +1094,48 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
                 next_tokens = next_tokens * unfinished_sequences + pad_token_id * (1 - unfinished_sequences)
 
             '''
-                LVR reasoning mode switches:
+                【LVR 修改】按步数控制的 LVR 推理模式切换逻辑：
 
-                When next token is <|lvr_start|>, we still need to pass its token id through decoding
-                When last token is <|lvr_start|>, we will start passing hidden states (enter lvr mode)
+                进入 LVR 模式：
+                - 当遇到 <|lvr_start|> token 时，开始使用隐藏状态进行推理
+                - 同时初始化步数配额（lvr_steps_orig）
 
-                During LVR, keep passing hidden_states until quota uses up
+                退出 LVR 模式：
+                - 不使用固定的 <|lvr_end|> token
+                - 而是通过步数配额控制：每执行一步 LVR 推理，配额减 1
+                - 当配额用尽时（lvr_remaining_steps <= 0），自动退出 LVR 模式
+
+                【与基础版本的区别】
+                - 基础版本：使用 <|lvr_end|> token 显式控制退出
+                - 本版本：使用步数配额隐式控制退出，更灵活
             '''
             last_tokens = input_ids[:,-1]
+            # 【LVR 修改】检测是否遇到 <|lvr_start|> token
             lvr_start_switch = (last_tokens == self.config.lvr_start_id).to(device=input_ids.device)            
           
             '''
+                【LVR 修改】步数配额管理模式：
                 Goal: lvr_mode_switch = lvr_mode_switch + lvr_start_switch 
                 the exit is controlled by lvr quota now, not <|lvr_end|>
-
             '''
-            # Candidate new switch (no end token anymore)
+            # 【LVR 修改】候选新模式开关（不再使用 end token）
             new_mode_switch = lvr_mode_switch | lvr_start_switch
 
-            # Detect entry vs continuation
+            # 【LVR 修改】检测是刚进入 LVR 模式还是继续在 LVR 模式中
             just_entered = (~lvr_mode_switch) & new_mode_switch
             still_in     = lvr_mode_switch & new_mode_switch
 
-            # Reset quota when entering
+            # 【LVR 修改】刚进入 LVR 模式时，重置步数配额为初始值
             lvr_remaining_steps = torch.where(just_entered, lvr_steps_orig, lvr_remaining_steps)
 
-            # Decrement quota only if we were already inside before this step
+            # 【LVR 修改】如果当前已经在 LVR 模式中，则每步消耗 1 个配额
             lvr_remaining_steps = lvr_remaining_steps - lvr_mode_switch.long()
 
-            # Exit if quota used up
+            # 【LVR 修改】如果配额用尽，退出 LVR 模式
             lvr_mode_switch = new_mode_switch & (lvr_remaining_steps > 0)
 
 
+            # 【LVR 修改】保存当前输出的最后位置隐藏状态，用于下一轮 LVR 推理
             last_position_hidden_state = outputs.last_position_hidden_state
 
             # update generated ids, model inputs, and length for next step
@@ -1056,6 +1143,8 @@ class QwenWithLVR(Qwen2_5_VLForConditionalGeneration):
             if streamer is not None:
                 streamer.put(next_tokens.cpu())
 
+            # 【LVR 修改】停止条件处理：如果当前处于 LVR 模式，即使达到其他停止条件也不停止
+            # 这是因为 LVR 模式需要完成完整的推理过程才能退出
             # unfinished_sequences = unfinished_sequences & ~stopping_criteria(input_ids, scores)
             """if lvr mode is unfinished, do not stop"""
             unfinished_sequences = (
